@@ -1,0 +1,65 @@
+.container {
+  position: relative;
+  width: 620px;
+  height: 833px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+  background-image: url('../../public/profile_card.svg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  .strap {
+    position: relative;
+    right: 3px;
+    width: 85px;
+    height: 90px;
+    background-color: #16abff;
+    border-radius: 0 0 5px 5px;
+  }
+
+  .upload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    width: 350px;
+    height: 350px;
+    background-color: #fbfbfb;
+    border: 3px solid #e2e2e2;
+    border-style: dashed;
+    border-radius: 35px;
+    transition: all ease-in 0.2s;
+
+    span {
+      color: gray;
+    }
+
+    svg {
+      width: 80px;
+      height: 80px;
+      color: #d7d7d7;
+    }
+
+    input {
+      display: none;
+    }
+
+    &:hover {
+      box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.05);
+    }
+  }
+
+  .profile {
+    width: 350px;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 35px;
+    border: 1px solid #e2e2e2;
+  }
+}
